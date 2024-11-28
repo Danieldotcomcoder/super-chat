@@ -29,6 +29,6 @@ npm run dev
 
 Super Chat is built using the UI from Horizon ChatGPT AI Template: 
 
-You can find the GitHub repository [here](git@github.com:horizon-ui/chatgpt-ai-template.git), 
+You can find the GitHub repository [here](https://github.com/horizon-ui/chatgpt-ai-template.git) 
 
 and the Figma design [here](https://www.figma.com/community/file/1253038328954459768).
