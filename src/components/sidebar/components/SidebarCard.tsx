@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react';
 import logoWhite from '../../../../public/img/layout/logoWhite.png';
 
-export default function SidebarDocs() {
+function SidebarDocs() {
   const bgColor = 'linear-gradient(135deg, #868CFF 0%, #4318FF 100%)';
   const borderColor = useColorModeValue('white', 'navy.800');
 
@@ -21,7 +21,7 @@ export default function SidebarDocs() {
       borderRadius="16px"
       position="relative"
     >
-      <Flex
+      {/* <Flex
         border="5px solid"
         borderColor={borderColor}
         bg="linear-gradient(135deg, #868CFF 0%, #4318FF 100%)"
@@ -60,8 +60,8 @@ export default function SidebarDocs() {
           Get your AI Project to another level and start doing more with Horizon
           AI Template PRO!
         </Text>
-      </Flex>
-      <Link href="https://horizon-ui.com/ai-template" isExternal>
+      </Flex> */}
+      {/* <Link href="https://horizon-ui.com/ai-template" isExternal>
         <Button
           bg="whiteAlpha.300"
           _hover={{ bg: 'whiteAlpha.200' }}
@@ -76,7 +76,7 @@ export default function SidebarDocs() {
         >
           Get started with PRO
         </Button>
-      </Link>
+      </Link> */}
     </Flex>
   );
 }

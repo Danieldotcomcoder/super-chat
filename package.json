@@ -1,5 +1,5 @@
 {
-  "name": "horizon-ai-template-pro",
+  "name": "super-chat",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -28,10 +28,10 @@
     "endent": "^2.1.0",
     "eventsource-parser": "^1.0.0",
     "framer-motion": "^4.1.17",
-    "next": "^14.2.5",
-    "react": "18.2.0",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
     "react-custom-scrollbars-2": "^4.2.1",
-    "react-dom": "18.2.0",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.9.0",
     "react-is": "^18.0.0",
     "react-markdown": "^8.0.6",
