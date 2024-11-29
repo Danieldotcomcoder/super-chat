@@ -4,6 +4,8 @@ import { Flex, useColorModeValue } from '@chakra-ui/react';
 
 import { HorizonLogo } from '@/components/icons/Icons';
 import { HSeparator } from '@/components/separator/Separator';
+import NavLink from '@/components/link/NavLink';
+import { Text } from '@chakra-ui/react';
 
 export function SidebarBrand() {
   //   Chakra color mode
@@ -11,7 +13,10 @@ export function SidebarBrand() {
 
   return (
     <Flex alignItems="center" flexDirection="column">
-      Super Chat
+      <NavLink href="/" >
+        Super Chat
+      </NavLink>
+
       {/* <HorizonLogo h="26px" w="146px" my="30px" color={logoColor} /> */}
       <HSeparator mb="20px" w="284px" />
     </Flex>

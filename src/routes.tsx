@@ -24,6 +24,23 @@ const routes: IRoute[] = [
     collapse: false,
   },
   {
+    name: 'Test',
+    disabled: false,
+    path: '/test',
+    icon: (
+      <Icon as={MdAutoAwesome} width="20px" height="20px" color="inherit" />
+    ),
+    collapse: false,
+  }
+
+];
+
+export default routes;
+
+
+/* 
+
+{
     name: 'All Templates',
     disabled: false,
     path: '/all-templates',
@@ -228,6 +245,5 @@ const routes: IRoute[] = [
     invisible: true,
     collapse: false,
   },
-];
 
-export default routes;
+*/

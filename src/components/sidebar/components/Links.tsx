@@ -152,7 +152,7 @@ export function SidebarLinks(props: SidebarLinksProps) {
                   )}
                 </AccordionButton>
                 <AccordionPanel py="0px" ps={'8px'}>
-                  <List>
+                  {/* <List>
                     {
                       route.icon && route.items
                         ? createLinks(route.items) // for bullet accordion links
@@ -160,10 +160,10 @@ export function SidebarLinks(props: SidebarLinksProps) {
                         ? createAccordionLinks(route.items)
                         : '' // for non-bullet accordion links
                     }
-                  </List>
+                  </List> */}
                 </AccordionPanel>
               </AccordionItem>
-              <Link
+              {/* <Link
                 isExternal
                 href="https://horizon-ui.com/ai-template"
                 mt="6px"
@@ -179,7 +179,7 @@ export function SidebarLinks(props: SidebarLinksProps) {
                 >
                   PRO
                 </Badge>
-              </Link>
+              </Link> */}
             </Flex>
           </Accordion>
         );
@@ -216,13 +216,13 @@ export function SidebarLinks(props: SidebarLinksProps) {
                         justifyContent="center"
                       >
                         <Box
-                          color={
-                            route.disabled
-                              ? gray
-                              : activeRoute(route.path.toLowerCase())
-                              ? activeIcon
-                              : inactiveColor
-                          }
+                          // color={
+                          //   route.disabled
+                          //     ? gray
+                          //     : activeRoute(route.path.toLowerCase())
+                          //     ? activeIcon
+                          //     : inactiveColor
+                          // }
                           me="12px"
                           mt="6px"
                         >
@@ -230,13 +230,13 @@ export function SidebarLinks(props: SidebarLinksProps) {
                         </Box>
                         <Text
                           me="auto"
-                          color={
-                            route.disabled
-                              ? gray
-                              : activeRoute(route.path.toLowerCase())
-                              ? activeColor
-                              : 'gray.500'
-                          }
+                          // color={
+                          //   route.disabled
+                          //     ? gray
+                          //     : activeRoute(route.path.toLowerCase())
+                          //     ? activeColor
+                          //     : 'gray.500'
+                          // }
                           fontWeight="500"
                           letterSpacing="0px"
                           fontSize="sm"
@@ -246,59 +246,48 @@ export function SidebarLinks(props: SidebarLinksProps) {
                       </Flex>
                     </NavLink>
                   ) : (
-                    <Flex
-                      w="100%"
-                      alignItems="center"
-                      justifyContent="center"
-                      cursor="not-allowed"
+                    <NavLink
+                      href={
+                        route.layout ? route.layout + route.path : route.path
+                      }
+                      key={key}
+                      styles={{ width: '100%' }}
                     >
-                      <Box
-                        opacity="0.4"
-                        color={
-                          route.disabled
-                            ? gray
-                            : activeRoute(route.path.toLowerCase())
-                            ? activeIcon
-                            : inactiveColor
-                        }
-                        me="12px"
-                        mt="6px"
+                      <Flex
+                        w="100%"
+                        alignItems="center"
+                        justifyContent="center"
                       >
-                        {route.icon}
-                      </Box>
-                      <Text
-                        opacity="0.4"
-                        me="auto"
-                        color={
-                          route.disabled
-                            ? gray
-                            : activeRoute(route.path.toLowerCase())
-                            ? activeColor
-                            : 'gray.500'
-                        }
-                        fontWeight="500"
-                        letterSpacing="0px"
-                        fontSize="sm"
-                      >
-                        {route.name}
-                      </Text>
-                      <Link
-                        isExternal
-                        href="https://horizon-ui.com/ai-template"
-                      >
-                        <Badge
-                          display={{ base: 'flex', lg: 'none', xl: 'flex' }}
-                          colorScheme="brand"
-                          borderRadius="25px"
-                          color="brand.500"
-                          textTransform={'none'}
-                          letterSpacing="0px"
-                          px="8px"
+                        <Box
+                          // color={
+                          //   route.disabled
+                          //     ? gray
+                          //     : activeRoute(route.path.toLowerCase())
+                          //     ? activeIcon
+                          //     : inactiveColor
+                          // }
+                          me="12px"
+                          mt="6px"
                         >
-                          PRO
-                        </Badge>
-                      </Link>
-                    </Flex>
+                          {route.icon}
+                        </Box>
+                        <Text
+                          me="auto"
+                          // color={
+                          //   route.disabled
+                          //     ? gray
+                          //     : activeRoute(route.path.toLowerCase())
+                          //     ? activeColor
+                          //     : 'gray.500'
+                          // }
+                          fontWeight="500"
+                          letterSpacing="0px"
+                          fontSize="sm"
+                        >
+                          {route.name}
+                        </Text>
+                      </Flex>
+                    </NavLink>
                   )}
                 </HStack>
               </Flex>
@@ -306,17 +295,17 @@ export function SidebarLinks(props: SidebarLinksProps) {
               <ListItem ms={0} cursor="not-allowed" opacity={'0.4'}>
                 <Flex ps="32px" alignItems="center" mb="8px">
                   <Text
-                    color={
-                      route.disabled
-                        ? gray
-                        : activeRoute(route.path.toLowerCase())
-                        ? activeColor
-                        : inactiveColor
-                    }
+                    // color={
+                    //   route.disabled
+                    //     ? gray
+                    //     : activeRoute(route.path.toLowerCase())
+                    //     ? activeColor
+                    //     : inactiveColor
+                    // }
                     fontWeight="500"
                     fontSize="xs"
                   >
-                    {route.name}
+                    {/* {route.name} */}
                   </Text>
                 </Flex>
               </ListItem>
@@ -343,22 +332,22 @@ export function SidebarLinks(props: SidebarLinksProps) {
             h="6px"
             me="8px"
             as={FaCircle}
-            color={route.disabled ? gray : activeIcon}
+            // color={route.disabled ? gray : activeIcon}
           />
           <Text
-            color={
-              route.disabled
-                ? gray
-                : activeRoute(route.path.toLowerCase())
-                ? activeColor
-                : inactiveColor
-            }
-            fontWeight={
-              activeRoute(route.path.toLowerCase()) ? 'bold' : 'normal'
-            }
-            fontSize="sm"
+          // color={
+          //   route.disabled
+          //     ? gray
+          //     : activeRoute(route.path.toLowerCase())
+          //     ? activeColor
+          //     : inactiveColor
+          // }
+          // fontWeight={
+          //   activeRoute(route.path.toLowerCase()) ? 'bold' : 'normal'
+          // }
+          // fontSize="sm"
           >
-            {route.name}
+            {/* {route.name} */}
           </Text>
         </ListItem>
       );

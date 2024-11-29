@@ -21,7 +21,7 @@ import {
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { MdAutoAwesome, MdBolt, MdEdit, MdPerson } from 'react-icons/md';
-import Bg from '../public/img/chat/bg-image.png';
+import Bg from '../../public/img/chat/bg-image.png';
 
 export default function Chat(props: { apiKeyApp: string }) {
   // Input States
